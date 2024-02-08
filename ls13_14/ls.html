@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .k {
+            width: 100px;
+            height:  100px;
+            background-color: aqua;
+            margin: 10px;
+        }
+
+        .fl_wr {
+            height: 800px;
+            border: 1px solid red;
+            display: flex;
+
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: baseline; */
+
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+
+
+            /* flex-flow: column wrap; */
+        }
+
+        .cen {
+            /* align-self: center; */
+            order: 4;
+        }
+
+        .end {
+            /* align-self: flex-end; */
+            order: 2;
+        }
+
+        .one {
+            order: 1;
+            /* flex-basis: 250px; */
+            /* flex-shrink: .5; */
+            /* flex-grow: .5; */
+            /* flex: .5 .5 250px; */
+        }
+
+        .th {
+            order: 3;
+        }
+
+        .fi {
+            order: 5;
+        }
+    </style>
+
+    <div class="fl_wr">
+        <div class="k one">1</div>
+        <div class="k cen">2</div>
+        <div class="k th">3</div>
+        <div class="k end">4</div>
+        <div class="k fi">5</div>
+    </div>
+
+
+</body>
+</html>

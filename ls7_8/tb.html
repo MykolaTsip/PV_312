@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+
+        * {
+           background-color: red; 
+        }
+
+        h1 {
+            color: silver;
+        }
+
+        .myTab {
+            border-collapse: collapse;
+        }
+
+        #ddd {
+            font-size: 22px;
+        }
+
+        .myTab tr td {
+            background-color: aqua;
+        }
+
+        td, th {
+            background-color: seagreen;
+        }
+
+        div + q {
+            background-color: white;
+        }
+
+        div ~ q {
+            background-color: blue;
+        }
+
+        div > q {
+            background-color: brown;
+        }
+
+
+        td[align] {
+            background-color: aliceblue !important;
+        }
+
+        td[width="60"] {
+            background-color: blue !important;
+        }
+
+        table:hover {
+            color: white;   
+        }
+
+        table:first-child {
+            color: blue;
+        }
+
+        table:last-child {
+            color: blue;
+        }
+
+        td:nth-child(3n+1) {
+            color: burlywood !important;
+        }
+
+        #ddd::before {
+            /* content:attr(class="ddd"); */
+        }
+    </style>
+
+    <div id="ddd">
+        fgdf fm
+    </div>
+
+    <q>
+        KMFKLdmfl    
+    </q>
+
+    <q>
+        KMFKLdmfl    
+    </q>
+
+    <div>
+        <q>
+            fkmgkdfmg
+        </q>
+    </div>
+
+    <table class="myTab" border="1">
+        <tr>
+            <td width="60">
+                fsd
+            </td>
+            <td>
+                dgkf
+            </td>
+            <td>
+                lkgpfdkp
+            </td>
+            <td>
+                f,ld
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="bottom"> mgf </td>
+            <td height="50"> ksk </td>
+            <td colspan="2"> ldlg </td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td> mgf </td>
+            <td> ksk </td>
+            <td> ldlg </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td> mgf </td>
+            <td rowspan="2"> ksk </td>
+            <td rowspan="2" colspan="2"> ldlg </td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td>
+                flgldfg
+            </td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th height="50"> Name </th>
+                <th> Model </th>
+                <th> Price </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td height="50" width="70"> Iphone </td>
+                <td> 12 </td>
+                <td> 600 </td>
+            </tr>
+            <tr>
+                <td> Xiomi </td>
+                <td> t13 </td>
+                <td> 500 </td>
+            </tr>
+            <tr>
+                <td> Samsung</td>
+                <td> J7</td>
+                <td> 550 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2"> Summary </th>
+                <th> 1650 </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
