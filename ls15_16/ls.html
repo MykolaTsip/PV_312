@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        * {
+            font-size: 1.3rem;
+        }
+
+        .firGr {
+            display: grid;
+
+            /* grid-template-columns: 25% 25% 50%;
+            grid-template-rows:    100px 100px 100px; */
+
+                                        /*0.5 */
+            /* grid-template-columns: 1fr .5fr 1fr 100px; */
+            /* grid-template-columns: auto 1fr 200px; */
+            /* grid-template-columns: fit-content(400px) 200px 200px; */
+            /* grid-template-columns: minmax(100px, 400px) 200px 200px; */
+            /* grid-template-columns: min-content 200px 200px; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(4, 200px);
+
+
+            grid-template-rows:    100px 100px 100px;
+
+            justify-items: center;
+            /* justify-items: end; */
+            /* justify-items: start; */
+
+
+            align-items: center;
+            /* align-items: end; */
+            /* align-items: start; */
+        }
+
+        .three {
+            align-self: end;
+            justify-self: end;
+        }
+
+        .two {
+            align-self: start;
+            justify-self: start;
+        }
+
+
+        /*  */
+        .geAr {
+            display: grid;
+            grid-template-areas: 'head head head' 
+                                 'cont cont side'
+                                 'foo foo foo';
+        }
+
+        .Header {
+            background-color: red;
+            grid-area: head;
+        }
+
+
+        .Content {
+            background-color: aqua;
+            grid-area: cont;
+        }
+
+        .Sidebar {
+            background-color: yellowgreen;
+            grid-area: side;
+        }
+
+        .Footer {
+            background-color: black;
+            grid-area: foo;   
+        }
+
+
+        /*  */
+        .theGr {
+            display: grid;
+            grid-template: repeat(3, 60px)/repeat(3, 1fr);
+            
+            grid-auto-rows: 100px;
+            grid-auto-columns: 100px;
+        }
+
+        .two1 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        
+        .three1 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+    </style>
+    
+
+    <div class="firGr">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+
+
+<hr>
+
+    <div class="geAr">
+        <div class="Header"> Header </div>
+        <div class="Content"> Content </div>
+        <div class="Sidebar"> Sidebar </div>
+        <div class="Footer"> Footer </div>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="theGr">
+        <div class="one1">1</div>
+        <div class="two1">2</div>
+        <div class="three1">3</div>
+        <div class="four1">4</div>
+        <div class="five1">5</div>
+        <div class="six1">6</div>
+        <div class="six1">6</div>
+        <div class="six1">6</div>
+        <div class="six1">6</div>
+        <!-- <div class="six1">7</div>
+        <div class="six1">6</div>
+        <div class="six1">6</div>
+        <div class="six1">7</div> -->
+    </div>
+</body>
+</html>

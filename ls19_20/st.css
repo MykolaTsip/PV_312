@@ -1,0 +1,171 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 0 100px;
+    background-color: #0D1319;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.num {
+    line-height: 280px;
+    font-size: 350px;
+    color: #E56000
+}
+
+
+.link_el {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #B8B8B8;
+}
+
+.link_el_l {
+    width: 50%;
+    color: #B8B8B8;
+}
+
+.link_el_r {
+    width: 50%;
+    color: #EEEDED;
+}
+
+
+.nav_item {
+    width: 45%;
+}
+
+.nav_block {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item_p {
+    font-size: 80px;
+}
+
+.nav_item_text {
+    /* margin-left: 250px; */
+    font-size: 35px;
+    color: #E56000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/main_1.png');
+}
+
+.nav_header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.nav_header ul li {
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav_header ul li:active {
+    color: silver;
+}
+
+/* Section 1 */
+.sec1 {
+    display: flex;
+}
+
+.sec1_title {
+    width: 45%;
+}
+
+.sec1_nav {
+    width: 55%;
+}
+
+.link_header {
+    margin-bottom: 50px;
+}
+
+
+/* Section 2 */
+.sec2 {
+    display: flex;
+}
+
+.sec2_text {
+    width: 55%;
+}
+
+/* Section 3 */
+.over_wrap {
+    display: flex;
+    padding: 100px 0;
+}
+
+.over_title {
+    width: 45%;
+}
+
+.over_title h3 {
+    font-size: 100px;
+    color: #0D1319;
+    text-transform: uppercase;
+    text-shadow: #E56000 3px 3px 3px;
+}
+
+.over_text {
+    width: 55%;
+}
+
+
+/* Section 4 */
+.swot_wrap {
+    display: flex;
+    margin: 100px 0;
+}
+
+.swot_l {
+    width: 55%;
+    padding-right: 60px;
+}
+
+.swot_r {
+    width: 45%;
+}
+
+.swot_title {
+    font-size: 77px;
+    text-transform: uppercase;
+    color: #E56000;
+    margin-bottom: 50px;
+}
